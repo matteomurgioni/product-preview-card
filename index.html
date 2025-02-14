@@ -4,36 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Product preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; background-color: hsl(30, 38%, 92%); }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
+  <!-- main here is the whole page since there's nothing else -->
+  <main role="main"> 
 
-  <main role="main">
     <div class="container">
-      <div class="image">
-        <picture>
-          <source srcset="./images/image-product-desktop.jpg" media="(min-width: 1024px)">
-          <img src="./images/image-product-mobile.jpg" alt="product-preview" width="686" height="480">
-        </picture>
-      </div>
+      <picture> <!-- responsive image -->
+        <source srcset="./images/image-product-desktop.jpg" media="(min-width: 1024px)">
+        <img src="./images/image-product-mobile.jpg" alt="product-preview" width="686" height="480">
+      </picture>
+      
+
       <div class="text">
+
         <div class="perfume">Perfume</div>
-        <h2>Gabrielle Essence Eau De Parfum</h2>
+        <h1>Gabrielle Essence Eau De Parfum</h1>
         <div class="description">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
           Perfumer-Creator for the House of CHANEL.
         </div>
+
         <div class="prices">
           <div class="big-price">$149.99</div>
           <div class="small-price">169.99</div>
         </div>
+
         <button>
           <img src="./images/icon-cart.svg" alt="icon-cart" width="15" height="16">
           Add to Cart

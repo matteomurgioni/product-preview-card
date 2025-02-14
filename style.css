@@ -3,3 +3,41 @@
     padding: 0;
     box-sizing: 0;
 }
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(1rem, 0.464rem + 1.429vw, 1.75rem);
+}
+
+.container {
+    border-radius: 10px;
+    height: 40em;
+    width: 20em;
+    background-color: white;
+    overflow: hidden;
+}
+
+img {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+
+.text {
+    padding: 1em;
+}
+
+.text .perfume {
+
+}
+
+.text h1 {
+    line-height: inherit;
+}
+
