@@ -32,10 +32,23 @@ main {
     
 }
 
+@media screen and (min-width: 1024px) {
+    .container {
+        flex-direction: row;
+    }
+    
+    picture {
+        flex: 0 0 50%;
+    }
+
+    .text {
+        flex: 0 0 50%;
+    }
+}
+
 img {
-    flex: 1;
     max-inline-size: 100%;
-    block-size: auto;
+    object-fit: cover;
 }
 
 
@@ -97,6 +110,7 @@ button {
     font-style: normal;
     color: white;
     text-align: center;
+    vertical-align: middle;
 
     border: 0;
     border-radius: 10px;
