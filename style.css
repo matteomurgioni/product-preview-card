@@ -21,24 +21,29 @@ main {
 
 .container {
     border-radius: 10px;
-    max-height: 40em;
+    height: auto;
     width: 20em;
     background-color: white;
     overflow: hidden;
 
     display: flex;
     flex-direction: column;
+    font-size: clamp(1rem, 0.929rem + 0.357vw, 1.5rem);
     
 }
 
 @media (min-width: 1024px) {
     .container {
         flex-direction: row;
-        width: 40em;
+        width: 30em;
     }
 
     picture {
         width: 50% !important; 
+    }
+
+    .main-img {
+        height: 100% !important;
     }
 
     .text {
@@ -47,14 +52,12 @@ main {
 }
 
 .picture {
-    width: 100%;
-    height: 30%;
     
 }
 
 .main-img {
     max-inline-size: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
 }
 
@@ -70,7 +73,7 @@ main {
     font-weight: 400;
     font-style: normal;
     color: hsl(228, 12%, 48%);
-    font-size: 0.9rem;
+    font-size: 0.9em;
 }
 
 .text .title,
@@ -85,7 +88,7 @@ main {
 }
 
 .text .title {
-    font-size: 2rem;
+    font-size: 2em;
     color: hsl(212, 21%, 14%);
     line-height: 1em;
     padding: 0.5em 0;
@@ -99,7 +102,7 @@ main {
 }
 
 .prices .big-price {
-    font-size: 2.2rem;
+    font-size: 2.2em;
     margin-right: 0.5em;
     color: hsl(158, 36%, 37%);
 }
